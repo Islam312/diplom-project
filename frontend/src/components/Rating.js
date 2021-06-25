@@ -4,6 +4,7 @@ import './Rating.scss'
 export default function Rating({ rating }) {
   return (
     <div className="rating">
+      <span className='rating__num'>{rating}</span>
       <span>
         <i
           className={

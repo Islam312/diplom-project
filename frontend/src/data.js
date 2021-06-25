@@ -9,10 +9,10 @@ const data = {
       brand: 'HENDERSON',
       rating: 3.5,
       numReviews: 10,
-      description: 'High quality product',
-      tags:[
-        'suit', 'classic suit'
-      ]
+      description:
+        'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
+      tags: ['suit', 'classic suit'],
+      countInStoke: 5,
     },
     {
       _id: '2',
@@ -23,7 +23,9 @@ const data = {
       brand: 'Reda',
       rating: 4.5,
       numReviews: 10,
-      description: 'Medium quality product',
+      description: 'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
+      tags: ['suit', 'classic suit'],
+      countInStoke: 0,
     },
     {
       _id: '3',
@@ -34,7 +36,9 @@ const data = {
       brand: 'Nike',
       rating: 4.5,
       numReviews: 10,
-      description: 'Low quality product',
+      description: 'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
+      tags: ['suit', 'classic suit'],
+      countInStoke: 4,
     },
     {
       _id: '4',
@@ -45,7 +49,9 @@ const data = {
       brand: 'Adidas',
       rating: 5,
       numReviews: 10,
-      description: 'Medium quality product',
+      description: 'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
+      tags: ['suit', 'classic suit'],
+      countInStoke: 2,
     },
     {
       _id: '5',
@@ -56,7 +62,9 @@ const data = {
       brand: 'Lacoste',
       rating: 4.5,
       numReviews: 10,
-      description: 'High quality product',
+      description: 'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
+      tags: ['suit', 'classic suit'],
+      countInStoke: 5,
     },
     {
       _id: '6',
@@ -67,7 +75,9 @@ const data = {
       brand: 'Lacoste',
       rating: 4.5,
       numReviews: 10,
-      description: 'High quality product',
+      description: 'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
+      tags: ['suit', 'classic suit'],
+      countInStoke: 2,
     },
     {
       _id: '7',
@@ -78,7 +88,9 @@ const data = {
       brand: 'Lacoste',
       rating: 4.5,
       numReviews: 10,
-      description: 'High quality product',
+      description: 'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
+      tags: ['suit', 'classic suit'],
+      countInStoke: 1,
     },
     {
       _id: '3',
@@ -89,13 +101,11 @@ const data = {
       brand: 'Nike',
       rating: 4.5,
       numReviews: 10,
-      description: 'Low quality product',
+      description: 'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
+      tags: ['suit', 'classic suit'],
+      countInStoke: 4,
     },
   ],
 };
-
-
-
-
 
 export default data;

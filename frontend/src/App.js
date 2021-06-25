@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
     <div className="grid-container">
-      <header className="row">
+      <header className="row container">
         <div className="logo">
           <a href="/">Luxury</a>
         </div>
@@ -18,7 +18,7 @@ function App() {
           <a href="signin.html">Sign In</a>
         </div>
       </header>
-      <main className="row center">
+      <main className="row center top">
         <Route path="/product/:id" component={ProductScreen}></Route>
         <Route path="/" component={HomeScreen} exact></Route>
       </main>
