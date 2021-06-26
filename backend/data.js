@@ -2,17 +2,17 @@ const data = {
   products: [
     {
       _id: '1',
-      name: 'HENDERSON',
+      name: 'HENDERSOn',
       category: 'classic suit',
       image: '/images/s1.jpg',
-      price: 120,
+      price: 1230,
       brand: 'HENDERSON',
-      rating: 3.5,
+      rating: 3.6,
       numReviews: 10,
       description:
         'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
       tags: ['suit', 'classic suit'],
-      countInStoke: 5,
+      countInStoke: 2,
     },
     {
       _id: '2',
@@ -23,7 +23,8 @@ const data = {
       brand: 'Reda',
       rating: 4.5,
       numReviews: 10,
-      description: 'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
+      description:
+        'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
       tags: ['suit', 'classic suit'],
       countInStoke: 0,
     },
@@ -36,7 +37,8 @@ const data = {
       brand: 'Nike',
       rating: 4.5,
       numReviews: 10,
-      description: 'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
+      description:
+        'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
       tags: ['suit', 'classic suit'],
       countInStoke: 4,
     },
@@ -49,7 +51,8 @@ const data = {
       brand: 'Adidas',
       rating: 5,
       numReviews: 10,
-      description: 'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
+      description:
+        'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
       tags: ['suit', 'classic suit'],
       countInStoke: 2,
     },
@@ -62,7 +65,8 @@ const data = {
       brand: 'Lacoste',
       rating: 4.5,
       numReviews: 10,
-      description: 'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
+      description:
+        'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
       tags: ['suit', 'classic suit'],
       countInStoke: 5,
     },
@@ -75,7 +79,8 @@ const data = {
       brand: 'Lacoste',
       rating: 4.5,
       numReviews: 10,
-      description: 'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
+      description:
+        'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
       tags: ['suit', 'classic suit'],
       countInStoke: 2,
     },
@@ -88,7 +93,8 @@ const data = {
       brand: 'Lacoste',
       rating: 4.5,
       numReviews: 10,
-      description: 'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
+      description:
+        'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
       tags: ['suit', 'classic suit'],
       countInStoke: 1,
     },
@@ -101,7 +107,8 @@ const data = {
       brand: 'Nike',
       rating: 4.5,
       numReviews: 10,
-      description: 'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
+      description:
+        'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
       tags: ['suit', 'classic suit'],
       countInStoke: 4,
     },
