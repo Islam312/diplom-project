@@ -104,4 +104,48 @@ footer {
       }
     }
   }
+  &__add-to-cart{
+    margin-top: 2rem;
+  }
+}
+.add-to-card {
+  cursor: pointer;
+  position: relative;
+  width: 20rem;
+  height: 5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  overflow: hidden;
+  border: 0;
+  background: #333;
+  color: #fff;
+  box-shadow: inset 1px 1px 10px #0007;
+  font-weight: 500;
+  border-radius: 1rem;
+
+  &::before,
+  &::after {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: attr(data-title);
+    transition-delay: .2s;
+    transition: .5s ease-in-out;
+  }
+  &::before {
+    top: -30%;
+  }
+  &::after{
+    top: 50%;
+  }
+  &:hover::before {
+    top: 50%;
+  }
+  &:hover::after {
+    top: 120%;
+  }
+}
+.in-stoke{
+  color: rgb(13, 202, 3);
 }

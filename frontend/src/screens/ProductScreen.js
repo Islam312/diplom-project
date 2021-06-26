@@ -8,7 +8,6 @@ export default function ProductScreen(props) {
   const product = data.products.find(
     (item) => item._id === props.match.params.id
   );
-  console.log('props.match =>>', props);
   return (
    <div>
      <Link to='/' className='back-to'> Back to result</Link>
@@ -20,9 +19,9 @@ export default function ProductScreen(props) {
         <div className="cart-product__stars">
           <Rating rating={product.rating}></Rating>
         </div>
-        <p className="cart-product__description">
+        <div className="cart-product__description">
           Description:<div>{product.description}</div>
-        </p>
+        </div>
         <ul className="cart-product__list">
           <li>
             <span>SKU:</span>
@@ -45,8 +44,8 @@ export default function ProductScreen(props) {
             )}
           </li>
         </ul>
-        <div>
-          <button className='add-to-card'></button>
+        <div className="cart-product__add-to-cart">
+          <button className='add-to-card' data-title="ADD TO CART"></button>
         </div>
       </div>
     </div>

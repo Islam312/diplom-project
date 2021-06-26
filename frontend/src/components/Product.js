@@ -2,9 +2,9 @@ import React from 'react';
 
 import "./Product.scss"
 
-export default function Product({key, product}) {
+export default function Product({product}) {
   return (
-    <li key={key}>
+    <li>
       <div className="card">
         <a href={`/product/${product._id}`}>
           <img className="card__img" src={product.image} alt={product.name} />
