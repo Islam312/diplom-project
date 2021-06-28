@@ -1,6 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import productRouter from './router/productRouter.js';
+import data from './data.js';
 import userRouter from './router/userRouter.js';
 
 const app = express();
@@ -9,13 +9,21 @@ mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/luxury', {
   useUnifiedTopology: true,
   useCreateIndex: true,
 });
+app.get(`/api/products/:id`, (req, res) => {
+  const product = data.products.find((x) => x._id === req.params.id);
+  if (product) {
+    res.send(product);
+  } else {
+    res.status(404).send({ message: 'Product not Found!!!' });
+  }
+});
 
-//* Users API
+app.get('/api/products', (req, res) => {
+  res.send(data.products);
+});
+
 app.use('/api/users', userRouter);
-//* Products API
-app.use(`/api/products`, productRouter);
 
-//* Server is ready information
 app.get('/', (req, res) => {
   res.send('Server is ready!');
 });

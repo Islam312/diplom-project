@@ -16,6 +16,7 @@ const data = {
   ],
   products: [
     {
+      _id: '1',
       name: 'HENDERSOn',
       category: 'classic suit',
       image: '/images/s1.jpg',
@@ -29,6 +30,7 @@ const data = {
       tags: ['suit', 'classic suit'],
     },
     {
+      _id: '2',
       name: 'T-Shirt',
       category: 'Shirts',
       image: '/images/s2.jpg',
@@ -42,6 +44,7 @@ const data = {
       tags: ['suit', 'classic suit'],
     },
     {
+      _id: '3',
       name: 'Slim Shirt',
       category: 'Shirts',
       image: '/images/s3.jpg',
@@ -55,6 +58,7 @@ const data = {
       tags: ['suit', 'classic suit'],
     },
     {
+      _id: '4',
       name: 'Shirts',
       category: 'Shirts',
       image: '/images/s4.jpg',
@@ -68,6 +72,7 @@ const data = {
       tags: ['suit', 'classic suit'],
     },
     {
+      _id: '5',
       name: 'T-Shirts',
       category: 'classic suit',
       image: '/images/s5.jpg',
@@ -81,6 +86,7 @@ const data = {
       tags: ['suit', 'classic suit'],
     },
     {
+      _id: '6',
       name: 'T-Shirts',
       category: 'classic suit',
       image: '/images/s6.jpg',
@@ -94,6 +100,7 @@ const data = {
       tags: ['suit', 'classic suit'],
     },
     {
+      _id: '7',
       name: 'T-Shirts',
       category: 'classic suit',
       image: '/images/s7.jpg',
@@ -107,6 +114,7 @@ const data = {
       tags: ['suit', 'classic suit'],
     },
     {
+      _id: '8',
       name: 'Slim Shirt',
       category: 'Shirts',
       image: '/images/s2.jpg',
