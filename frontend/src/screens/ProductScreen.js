@@ -72,28 +72,35 @@ export default function ProductScreen(props) {
                   )}
                 </li>
                 {product.countInStoke > 0 && (
-                  <div className="cart-product__add-to-cart">
-                    <div className="row">
-                      <span>Quantity</span>
-                      <div>
-                        <select
-                          value={qty}
-                          onChange={(e) => setQty(e.target.value)}
-                        >
-                          {[...Array(product.countInStoke).keys()].map((x) => (
-                            <option key={x + 1} value={x + 1}>
-                              {x + 1}
-                            </option>
-                          ))}
-                        </select>
+                  <>
+                    <li>
+                      <div className="row">
+                        <div>Qty</div>
+                        <div>
+                          <select
+                            value={qty}
+                            onChange={(e) => setQty(e.target.value)}
+                          >
+                            {[...Array(product.countInStoke).keys()].map(
+                              (x) => (
+                                <option key={x + 1} value={x + 1}>
+                                  {x + 1}
+                                </option>
+                              )
+                            )}
+                          </select>
+                        </div>
                       </div>
-                    </div>
-                    <button
-                      onClick={addToCartHandler}
-                      className="add-to-card"
-                      data-title="ADD TO CART"
-                    ></button>
-                  </div>
+                    </li>
+
+                    <li>
+                      <button
+                        onClick={addToCartHandler}
+                        className="add-to-card"
+                        data-title="ADD TO CART"
+                      ></button>
+                    </li>
+                  </>
                 )}
               </ul>
             </div>

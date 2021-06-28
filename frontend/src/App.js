@@ -10,6 +10,7 @@ import ProductScreen from './screens/ProductScreen';
 function App() {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
+  console.log('cartItems.countInStoke =>>', cartItems.countInStoke)
 
   return (
     <BrowserRouter>

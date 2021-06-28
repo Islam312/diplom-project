@@ -66,18 +66,11 @@ export default function CartScreen(props) {
                         );
                       }}
                     >
-                      {/* {[...Array(cartItems.countInStoke).keys()].map((x) => (
+                      {[...Array(cartItems.countInStoke).keys()].map((x) => (
                         <option key={x + 1} value={x + 1}>
                           {x + 1}
                         </option>
-                      ))} */}
-                      <option>{item.qty}</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                      <option>6</option>
+                      ))}
                     </select>
                   </div>
                   <div className="shopping-cart__price">$ {item.price}</div>
