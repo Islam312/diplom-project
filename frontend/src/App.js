@@ -10,7 +10,6 @@ import ProductScreen from './screens/ProductScreen';
 function App() {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
-  console.log('cartItems.countInStoke =>>', cartItems.countInStoke)
 
   return (
     <BrowserRouter>
@@ -20,10 +19,12 @@ function App() {
             <Link to="/">Luxury</Link>
           </div>
           <div>
-            <Link to="/cart">Cart
-            {cartItems.length > 0 && (
-              <span className='badge'>{cartItems.length}</span>
-            )}</Link>
+            <Link to="/cart">
+              Cart
+              {cartItems.length > 0 && (
+                <span className="badge">{cartItems.length}</span>
+              )}
+            </Link>
             <Link to="/signin">Sign in</Link>
           </div>
         </header>

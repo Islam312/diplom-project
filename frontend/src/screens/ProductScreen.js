@@ -52,26 +52,22 @@ export default function ProductScreen(props) {
               </div>
               <ul className="cart-product__list">
                 <li>
-                  <span>SKU:</span>
-                  {product._id}
+                  <span>Brand:</span>
+                  {product.brand}
                 </li>
                 <li>
                   <span>Category:</span>
                   {product.category}
                 </li>
                 <li>
-                  <span>Tags:</span>
-                  {product.tags.join(', ')}
-                </li>
-                <li>
                   <span>Status:</span>
-                  {product.countInStoke ? (
+                  {product.countInStock ? (
                     <span className="stoke in-stoke">In Stoke</span>
                   ) : (
                     <span className="stoke out-of-stoke">Out of Stoke</span>
                   )}
                 </li>
-                {product.countInStoke > 0 && (
+                {product.countInStock > 0 && (
                   <>
                     <li>
                       <div className="row">
@@ -81,7 +77,7 @@ export default function ProductScreen(props) {
                             value={qty}
                             onChange={(e) => setQty(e.target.value)}
                           >
-                            {[...Array(product.countInStoke).keys()].map(
+                            {[...Array(product.countInStock).keys()].map(
                               (x) => (
                                 <option key={x + 1} value={x + 1}>
                                   {x + 1}

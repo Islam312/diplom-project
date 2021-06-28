@@ -14,9 +14,7 @@ export default function CartScreen(props) {
 
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
-  console.log('cartItems =>>', cartItems);
 
-  // console.log('cartItems =>>', cartItems.countInStoke);
   //*dispatch productId and quantity of product
   const dispatch = useDispatch();
   useEffect(() => {
@@ -27,7 +25,7 @@ export default function CartScreen(props) {
 
   const removeFromCartHandler = (id) => {
     //*delete shopping cart
-    dispatch(removeFromCart(id))
+    dispatch(removeFromCart(id));
   };
   const checkOutHandler = () => {
     //* Proceed to Checkout
@@ -39,9 +37,7 @@ export default function CartScreen(props) {
       <div className="shopping-cart">
         <h1 className="shopping-cart__title">Shoping Cart</h1>
         {cartItems.length === 0 ? (
-          <MessageBox>
-            Cart is empty!!
-          </MessageBox>
+          <MessageBox>Cart is empty!!</MessageBox>
         ) : (
           <ul className="shopping-cart__list">
             {cartItems.map((item) => (
@@ -66,11 +62,13 @@ export default function CartScreen(props) {
                         );
                       }}
                     >
-                      {[...Array(cartItems.countInStoke).keys()].map((x) => (
-                        <option key={x + 1} value={x + 1}>
-                          {x + 1}
-                        </option>
-                      ))}
+                      {[...Array(item.countInStock).keys()].map((el) => {
+                        return (
+                          <option key={el + 1} value={el + 1}>
+                            {el + 1}
+                          </option>
+                        );
+                      })}
                     </select>
                   </div>
                   <div className="shopping-cart__price">$ {item.price}</div>
@@ -87,14 +85,18 @@ export default function CartScreen(props) {
             ))}
           </ul>
         )}
-            <div className='go-shopping'><Link to="/"><button className='add-to-card' data-title='Go Shopping'></button></Link></div>
+        <div className="go-shopping">
+          <Link to="/">
+            <button className="add-to-card" data-title="Go Shopping"></button>
+          </Link>
+        </div>
       </div>
       <div className="cart-calculate">
         <ul className="cart-calculate__list">
           <li className="cart-calculate__total-price">
             <h2>
-              Total price: ({cartItems.reduce((a, c) => a + c.qty, 0)} items) : ${' '}
-              {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}
+              Total price: ({cartItems.reduce((a, c) => a + c.qty, 0)} items) :
+              $ {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}
             </h2>
           </li>
           <li className="cart-calculate__check">
