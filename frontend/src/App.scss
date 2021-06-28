@@ -38,6 +38,31 @@ footer {
   margin: 0 auto;
   width: 100%;
 }
+input,
+textarea,
+select {
+  padding: 1rem;
+  border-radius: .5rem;
+  border: .1rem #a4a4a4 solid;
+  font-size: 1.6rem;
+  background: #f8f8f8;
+  cursor: pointer;
+}
+input:hover,
+textarea:hover,
+select:hover{
+ border: .1rem solid #404040;
+}
+//* header*/
+.badge {
+  background-color: #0007;
+  color: #fff;
+  border-radius: 50%;
+  border: 0.1rem solid #acacac;
+  padding: 0.2rem 0.6rem;
+  font-size: 1rem;
+  margin-left: 0.2rem;
+}
 //* Home Screens  **/
 /** ========== CARD ==============**/
 .list-product {
@@ -104,7 +129,7 @@ footer {
       }
     }
   }
-  &__add-to-cart{
+  &__add-to-cart {
     margin-top: 2rem;
   }
 }
@@ -130,13 +155,13 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     content: attr(data-title);
-    transition-delay: .2s;
-    transition: .5s ease-in-out;
+    transition-delay: 0.2s;
+    transition: 0.5s ease-in-out;
   }
   &::before {
     top: -30%;
   }
-  &::after{
+  &::after {
     top: 50%;
   }
   &:hover::before {
@@ -146,9 +171,77 @@ footer {
     top: 120%;
   }
 }
-.in-stoke{
+.in-stoke {
   color: rgb(13, 202, 3);
 }
-.out-of-stoke{
+.out-of-stoke {
   color: rgb(202, 3, 3);
+}
+
+//* CartScreen*/
+img.small {
+  max-width: 10rem;
+  width: 100%;
+  object-fit: cover;
+}
+.min-30 {
+  min-width: 30rem;
+}
+.shopping-cart {
+  &__title {
+    margin-bottom: 3rem;
+  }
+  &__list {
+    li {
+      margin-bottom: 2rem;
+    }
+  }
+  &__image {
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+  }
+  &__select {
+    margin-right: 2rem;
+  }
+  &__price {
+    margin-right: 6rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  &__del {
+    button {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      border: 0;
+      transition: 0.5s;
+      cursor: pointer;
+      &:hover {
+        background: rgb(240, 90, 90);
+      }
+
+      i {
+        color: rgb(240, 90, 90);
+        transition: 0.5s;
+      }
+      &:hover i {
+        color: #fff;
+      }
+    }
+  }
+}
+.cart-calculate{
+  min-width: 30rem;
+  border: .1rem solid #acacac;
+  padding: 3rem;
+  margin-left: 3rem;
+  background: #f8f8f8;
+  border-radius: 1rem;
+  margin-top: 10rem;
+  &__check{
+    margin-top: 4rem;
+  }
+}
+.go-shopping{
+  margin-top: 3rem;
 }
