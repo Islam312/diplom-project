@@ -25,13 +25,14 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &.center {
+    justify-content: center;
+  }
+  &.top {
+    align-items: flex-start;
+  }
 }
-.row.center {
-  justify-content: center;
-}
-.row.top {
-  align-items: flex-start;
-}
+
 .container {
   max-width: 113rem;
   padding: 0 1.5rem;
@@ -42,16 +43,16 @@ input,
 textarea,
 select {
   padding: 1rem;
-  border-radius: .5rem;
-  border: .1rem #a4a4a4 solid;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
   font-size: 1.6rem;
   background: #f8f8f8;
   cursor: pointer;
 }
 input:hover,
 textarea:hover,
-select:hover{
- border: .1rem solid #404040;
+select:hover {
+  border: 0.1rem solid #404040;
 }
 //* header*/
 .badge {
@@ -63,14 +64,14 @@ select:hover{
   font-size: 1rem;
   margin-left: 0.2rem;
 }
-//* Home Screens  **/
+//* ===================================== HOME SCREEN  ===========================================**/
 /** ========== CARD ==============**/
 .list-product {
   width: 100%;
   flex-wrap: wrap;
 }
 
-//* Product Details Screen*/
+//*=================================== PRODUCT DETAILS SCREEN ====================================*/
 .back-to {
   width: 20rem;
   padding: 0 1.5rem;
@@ -230,18 +231,57 @@ img.small {
     }
   }
 }
-.cart-calculate{
+.cart-calculate {
   min-width: 30rem;
-  border: .1rem solid #acacac;
+  border: 0.1rem solid #acacac;
   padding: 3rem;
   margin-left: 3rem;
   background: #f8f8f8;
   border-radius: 1rem;
   margin-top: 10rem;
-  &__check{
+  &__check {
     margin-top: 4rem;
   }
 }
-.go-shopping{
+.go-shopping {
   margin-top: 3rem;
+}
+
+//*============================== SIGNIN SCREEN========================*/
+.form {
+  max-width: 60rem;
+  width: 100%;
+  margin: 1rem auto 0;
+  h1 {
+    font-size: 2.4rem;
+  }
+  .add-to-cart {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  label {
+    display: block;
+  }
+  input {
+    width: 100%;
+  }
+  .create-acc {
+    display: flex;
+    font-size: 1.8rem;
+    
+    &__link {
+      font-size: 1.8rem;
+      color: rgb(7, 116, 199);
+      margin-left: 1rem;
+      &:hover{
+        color: rgb(0, 150, 204);
+      }
+    }
+  }
+}
+.form > div {
+  margin: 2rem 0;
+  display: block;
+  width: 100%;
 }
