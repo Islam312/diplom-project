@@ -67,6 +67,11 @@ select:hover {
     margin-right: 2rem;
   }
 }
+.logo {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
 .badge {
   background-color: #0007;
   color: #fff;
@@ -95,7 +100,7 @@ select:hover {
   &:hover &__content {
     display: block;
   }
-  &__item  {
+  &__item {
     color: #fff;
   }
 }
@@ -297,6 +302,7 @@ img.small {
   }
   label {
     display: block;
+    margin-bottom: 0.5rem;
   }
   input {
     width: 100%;
@@ -319,4 +325,59 @@ img.small {
   margin: 2rem 0;
   display: block;
   width: 100%;
+}
+
+//**=================================== PAYMENT METHOD SCREEN ==================================================**/
+
+.payment {
+  label{
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+  }
+  input{
+    width: 4rem;
+  }
+  input[type="radio"]{
+    background: #000;
+  }
+  &__item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+ 
+}
+
+//** ============================== PLACE ORDER SCREEN ==============================**//@at-root
+.place-order{
+  margin-top: 4rem;
+  h2{
+    margin-bottom: 1rem;
+  }
+  &__list{
+    max-width: 60rem;
+  }
+  &__item{
+    margin-bottom: 2rem;
+    padding: 3rem;
+    border: .2rem solid #0002;
+    border-radius: 1rem;
+  }
+  &__calc{
+    margin-bottom: 2rem;
+    padding: 3rem;
+    border: .2rem solid #0002;
+    border-radius: 1rem;
+    max-width: 40rem;
+    width: 100%;
+    *{
+    font-size: 2rem;
+
+    }
+    .row{
+      margin-bottom: 1rem;
+    }
+  }
 }

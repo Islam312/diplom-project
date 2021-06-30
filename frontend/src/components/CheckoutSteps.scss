@@ -1,0 +1,20 @@
+//* =========================== Checkout Steps=========================*//
+.checkout-steps {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  min-width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: bold;
+  div {
+    border-top: 0.3rem #acacac solid;
+    color: #acacac;
+    flex: 1;
+    padding: 1rem;
+  }
+  div.active {
+    border-top-color: #f08000;
+    color: #f08000;
+  }
+}

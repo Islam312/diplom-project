@@ -6,7 +6,12 @@ import { signout } from './actions/userActions';
 import './App.scss';
 import CartScreen from './screens/CartScreen';
 import HomeScreen from './screens/HomeScreen';
+import OrderScreen from './screens/OrderScreen';
+import PaymentMethodScreen from './screens/PaymentMethodScreen';
+import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import ProductScreen from './screens/ProductScreen';
+import RegisterScreen from './screens/RegisterScreen';
+import ShippingAddressScreen from './screens/ShippingAddressScreen';
 import SigninScreen from './screens/SigninScreen';
 
 function App() {
@@ -24,8 +29,10 @@ function App() {
     <BrowserRouter>
       <div className="grid-container">
         <header className="row container header">
-          <div className="logo">
-            <Link to="/">Luxury</Link>
+          <div>
+            <Link to="/" className="logo">
+              Luxury
+            </Link>
           </div>
           <div className="row header__link">
             <div className="header__cart">
@@ -59,10 +66,15 @@ function App() {
             )}
           </div>
         </header>
-        <main className="row center top">
+        <main>
           <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route path="/product/:id" component={ProductScreen}></Route>
           <Route path="/signin" component={SigninScreen}></Route>
+          <Route path="/register" component={RegisterScreen}></Route>
+          <Route path="/shipping" component={ShippingAddressScreen}></Route>
+          <Route path="/payment" component={PaymentMethodScreen}></Route>
+          <Route path="/placeorder" component={PlaceOrderScreen}></Route>
+          <Route path="/order/:id" component={OrderScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
         <footer className="row center">Made by kayfaRik</footer>

@@ -28,8 +28,8 @@ export default function CartScreen(props) {
     dispatch(removeFromCart(id));
   };
   const checkOutHandler = () => {
-    //* Proceed to Checkout
-    props.history.push('/sign?redirect=shipping');
+    //* Proceed to Checkout 
+    props.history.push('/signin?redirect=shipping');
   };
 
   return (

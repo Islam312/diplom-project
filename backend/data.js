@@ -88,12 +88,12 @@ const data = {
         'Lorem ipsum dolor sit amet, ex usu deserunt inciderint, quis accusam accusamus ea nec. Duo placerat mandamus ne, per eu tollit salutatus vituperata. Vix partem quaestio assueverit an.',
     },
     {
-      name: 'F-Shirts',
+      name: 'LONG PLEATED JACKET',
       category: 'classic suit',
       image: '/images/s7.jpg',
       price: 32,
       brand: 'Lacoste',
-      rating: 4.5,
+      rating: 3.2,
       numReviews: 10,
       countInStock: 9,
       description:
@@ -105,7 +105,7 @@ const data = {
       image: '/images/s2.jpg',
       price: 15,
       brand: 'Nike',
-      rating: 4.5,
+      rating: 4,
       numReviews: 10,
       countInStock: 10,
       description:
